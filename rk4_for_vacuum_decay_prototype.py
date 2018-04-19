@@ -34,9 +34,6 @@ def dx(t, x):
     return potential(x)
 
 def rk4(t, x, derivative, step): # For solving a differential equation of the form dx/dt with a step in t of value 'step'
-    ''''
-    Check if there should be the '+ step/2' and '+ step' after the 'r'
-    '''
     k_1 = derivative(t, x)
     k_2 = derivative(t + (step/2), x + (step/2) * k_1)
     k_3 = derivative(t + (step/2), x + (step/2) * k_2)
