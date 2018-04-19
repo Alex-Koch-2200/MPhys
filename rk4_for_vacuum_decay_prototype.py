@@ -33,7 +33,7 @@ def potential(x):
 def dx(t, x):
     return potential(x)
 
-def rk4(t, x, derivative, step): # For solving a differential equation of the form d(phi)/dr with a step in r of value 'step'
+def rk4(t, x, derivative, step): # For solving a differential equation of the form dx/dt with a step in t of value 'step'
     ''''
     Check if there should be the '+ step/2' and '+ step' after the 'r'
     '''
